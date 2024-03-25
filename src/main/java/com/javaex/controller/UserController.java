@@ -24,8 +24,6 @@ public class UserController {
 		
 		// no, name              id, pw
 		UserVo authUser = userService.exeLogin(userVo);
-		System.out.println(authUser);
-		
 		
 		if(authUser != null) {
 			//토큰발급 헤더에 실어 보낸다                    문자열과 숫자 더하면 문자열로 바뀐다.
